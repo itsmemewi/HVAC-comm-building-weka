@@ -1,0 +1,100 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.2 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 2
+Relation:     HVAC (Dummy Data) (1)-weka.filters.unsupervised.attribute.RemoveUseless-M99.0-weka.filters.unsupervised.instance.RemoveDuplicates-weka.filters.unsupervised.attribute.NumericToBinary-R11-weka.filters.unsupervised.attribute.NumericToBinary-R11-weka.filters.unsupervised.attribute.NumericToNominal-R11
+Instances:    132
+Attributes:   11
+              T_Supply
+              T_Return
+              SP_Return
+              T_Saturation
+              T_Outdoor
+              RH_Supply
+              RH_Return
+              RH_Outdoor
+              Energy
+              Power
+              Maintanance_Needs
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    1.8085119670930399
+    Node 2    -4.038269779799336
+    Node 3    -3.6723335013571807
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.8085119681414261
+    Node 2    4.03826978234931
+    Node 3    3.6723335035136224
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -6.3495511706213
+    Attrib T_Supply    -4.9240479347289
+    Attrib T_Return    0.3284469259310074
+    Attrib SP_Return    0.5247463691168623
+    Attrib T_Saturation    -1.1176809002354324
+    Attrib T_Outdoor    -9.309029394054594
+    Attrib RH_Supply    1.2118539275413578
+    Attrib RH_Return    -1.6334588152671397
+    Attrib RH_Outdoor    -10.233062067286314
+    Attrib Energy    6.638797180394104
+    Attrib Power    4.908285899080868
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.7485803071406811
+    Attrib T_Supply    9.984825506873612
+    Attrib T_Return    -2.8955410641204162
+    Attrib SP_Return    -0.49946605207049444
+    Attrib T_Saturation    -5.122981961679337
+    Attrib T_Outdoor    -3.1313073784616656
+    Attrib RH_Supply    5.718815983047056
+    Attrib RH_Return    0.49302820425997446
+    Attrib RH_Outdoor    2.5169990477148407
+    Attrib Energy    0.9953788172031591
+    Attrib Power    -8.316234991489974
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+Time taken to build model: 0.05 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         108               81.8182 %
+Incorrectly Classified Instances        24               18.1818 %
+Kappa statistic                          0.6296
+K&B Relative Info Score                 37.7768 %
+K&B Information Score                   49.0366 bits      0.3715 bits/instance
+Class complexity | order 0             129.8062 bits      0.9834 bits/instance
+Class complexity | scheme               98.3479 bits      0.7451 bits/instance
+Complexity improvement     (Sf)         31.4583 bits      0.2383 bits/instance
+Mean absolute error                      0.3225
+Root mean squared error                  0.4054
+Relative absolute error                 65.9964 %
+Root relative squared error             82.0343 %
+Total Number of Instances              132     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.804    0.171    0.776      0.804    0.789      0.630    0.805     0.705     0
+                 0.829    0.196    0.851      0.829    0.840      0.630    0.805     0.803     1
+Weighted Avg.    0.818    0.186    0.819      0.818    0.819      0.630    0.805     0.761     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 45 11 |  a = 0
+ 13 63 |  b = 1
+
